@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date: 2012-05-07
+  position: MyString
+  last_name: MyString
+  First_name: MyString
+  Middle_initial: MyString
+  address: MyString
+  cityLstring: MyString
+  state: MyString
+  zip_code: MyString
+  E_c_f: MyString
+  e_b_s: MyString
+  h_l_e_c: MyString
+  Namee_of_company: MyString
+  title: MyString
+  supervisor: MyString
+  supervisor_phone: MyString
+  were_you_fired: MyString
+
+two:
+  date: 2012-05-07
+  position: MyString
+  last_name: MyString
+  First_name: MyString
+  Middle_initial: MyString
+  address: MyString
+  cityLstring: MyString
+  state: MyString
+  zip_code: MyString
+  E_c_f: MyString
+  e_b_s: MyString
+  h_l_e_c: MyString
+  Namee_of_company: MyString
+  title: MyString
+  supervisor: MyString
+  supervisor_phone: MyString
+  were_you_fired: MyString

@@ -1,0 +1,127 @@
+<%= form_for(@info) do |f| %>
+  <% if @info.errors.any? %>
+    <div id="error_explanation">
+      <h1><%= pluralize(@info.errors.count, "error") %> prohibited this info from being saved:</h1>
+
+      <ul>
+      <% @info.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<table>
+  <tr>
+    <td colspan="6"><center><p><font size="5" face="arial" color="red">Personal Information</center></p></td>
+</tr>
+
+
+  <div class="field">
+   <%= f.label :date %>
+    <%= f.date_select :date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :position %>
+    <%= f.text_field :position %>
+  </div>
+
+<table >
+  <tr>
+    <td><div class="field">
+    <%= f.label      :last_name %>
+    <%= f.text_field :last_name %>
+  </div></td>
+    <td> <div class="field">
+    <%= f.label      :First_name %>
+    <%= f.text_field :First_name %>
+  </div></td>
+    <td><div class="field">
+    <%= f.label :Middle_initial %>
+    <%= f.text_field :Middle_initial %>
+  </div></td>
+  </tr>
+  <tr>
+    <td><div class="field">
+    <%= f.label :address %>
+  </div></td>
+  </tr>
+
+  <tr>
+    <td><div class="field">
+    <%= f.label :cityLstring,"city" %>
+    <%= f.text_field :cityLstring %>
+  </div></td>
+
+    <td><div class="field">
+    <%= f.label :state %>
+    <%= f.text_field :state %>
+  </div></td>
+
+    <td><div class="field">
+    <%= f.label :zip_code %>
+    <%= f.text_field :zip_code %>
+  </div></td>
+  </tr>
+
+  <tr>
+    <td><div class="field">
+    <%= f.label :E_c_f, "Ever convicted a felony" %>
+    <%= f.text_field :E_c_f %>
+  </div></td>
+</tr>
+
+<tr>
+  <td>
+    <div class="field">
+    <%= f.label :e_b_s, "Ever been in the service" %>
+    <%= f.text_field :e_b_s %>
+  </div>
+</tr>
+</td>
+
+<tr>
+  <td> <div class="field">
+    <%= f.label :h_l_e_c, "Highest level of education completed"%>
+    <%= f.text_field :h_l_e_c %>
+  </div></td>
+</tr>
+
+<tr>
+    <td colspan="6"><p><font size="5" face="arial" color="red">Previous Employment </p></td>
+</tr>
+
+<tr>
+  <td><div class="field">
+    <%= f.label :Namee_of_company %>
+    <%= f.text_field :Namee_of_company %>
+  </div></td>
+
+  <td><div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div></td>
+
+  <td><div class="field">
+    <%= f.label :supervisor %>
+    <%= f.text_field :supervisor %>
+  </div></td>
+</tr>
+<tr>
+  <td><div class="field">
+    <%= f.label :supervisor_phone %>
+    <%= f.text_field :supervisor_phone %>
+  </div></td>
+  <td><div class="field">
+    <%= f.label :were_you_fired %>
+    <%= f.text_field :were_you_fired %>
+  </div></td>
+
+</tr>
+</table>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

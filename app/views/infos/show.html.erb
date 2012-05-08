@@ -1,0 +1,124 @@
+<p id="notice"><%= notice %></p>
+<table>
+<tr>
+  <td>
+<p>
+  <b>Date:</b>
+  <%= @info.date %>
+</p>
+</td></tr>
+
+<tr>
+  <td>
+<p>
+  <b>Position:</b>
+  <%= @info.position %>
+</p>
+</td>
+</tr>
+
+
+<table>
+<tr>
+  <td>
+<p>
+  <b>Last name:</b>
+  <%= @info.last_name %>
+</p>
+</td>
+
+<td>
+<p>
+  <b>First name:</b>
+  <%= @info.First_name %>
+</p>
+</td>
+
+<td>
+<p>
+  <b>Middle initial:</b>
+  <%= @info.Middle_initial %>
+</p>
+</td>
+</tr>
+
+<tr>
+  <td>
+<p>
+  <b>Address</b>
+  <%= @info.address %>
+</p>
+</td>
+</tr>
+
+<tr>
+  <td>
+<p>
+  <b>City:</b>
+  <%= @info.cityLstring %>
+</p></td>
+
+<td>
+<p>
+  <b>State:</b>
+  <%= @info.state %>
+</p>
+</td>
+
+<td>
+<p>
+  <b>Zip code:</b>
+  <%= @info.zip_code %>
+</p>
+</td>
+</tr>
+
+<p>
+  <b>Ever convicted of a felony:</b>
+  <%= @info.E_c_f %>
+</p>
+
+<p>
+  <b>Ever been in the service:</b>
+  <%= @info.e_b_s %>
+</p>
+
+<p>
+  <b>Highest level of education complete:</b>
+  <%= @info.h_l_e_c %>
+</p>
+<tr>
+  <td>
+<p>
+  <b>Namee of company:</b>
+  <%= @info.Namee_of_company %>
+</p>
+</td>
+<td>
+<p>
+  <b>Title:</b>
+  <%= @info.title %>
+</p></td>
+<td>
+<p>
+  <b>Supervisor:</b>
+  <%= @info.supervisor %>
+</p>
+</td>
+
+<tr>
+  <td>
+<p>
+  <b>Supervisor phone:</b>
+  <%= @info.supervisor_phone %>
+</p></td>
+<td>
+<p>
+  <b>Were you fired:</b>
+  <%= @info.were_you_fired %>
+</p></td>
+</tr>
+</table>
+
+<%= link_to 'Edit', edit_info_path(@info) %> |
+<%= link_to 'Back', infos_path %>
